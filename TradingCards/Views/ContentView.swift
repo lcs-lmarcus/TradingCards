@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Spacer()
+            
             Text ("*Freedom Gundam*")
                 .offset(x:-65 ,y:-385)
                 .font (
@@ -20,6 +20,7 @@ struct ContentView: View {
                 .fontWeight(.black)
                 .foregroundStyle(.black)
                 .opacity(0.8)
+            
             Image ("GundamBackground")
                 .resizable()
                 .opacity(0.5)
@@ -27,20 +28,31 @@ struct ContentView: View {
             //                    ignoresSafeArea(edges: .all)
             
             VStack {
-                Image("FgGundam")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 250, height: 250)
-                    .border(.blue, width: 7.5)
-                    .padding()
-                    .border(.black, width: 15)
-                    .padding()
+                ZStack {
+                    Image("FgGundam")
+                        .resizable()
+                        .scaledToFit()
+//                        .frame(width: 250, height: 250)
+                        .border(.blue, width: 7.5)
+                        .padding()
+                        .border(.black, width: 15)
+                        .padding()
+                    
+                    HStack {
+                        Spacer()
+                        
+                        VStack {
+                            Spacer()
+                            Image ("IconGundam")
+                                .resizable()
+                                .frame(width: 160, height: 110)
+                                .padding(.bottom, 45)
+                        }
+                    }
+                }
                 Divider()
-                Image ("IconGundam")
-                    .resizable()
-                    .frame(width: 160, height: 110)
-                    .scaledToFit()
-                    .position(x: 330, y: -80)
+
+
                 Divider()
                 
                 VStack {
