@@ -12,39 +12,40 @@ struct GundamView: View {
     let providedGundam: GundamCard
     
     var body: some View {
-        ZStack {
-            Image ("Frame")
+        HStack {
+            Image("Frame")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 150, height: 140)
-                .position(x:130, y:390)
-            HStack {
-                Image(providedGundam.image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 100, height: 100)
-                VStack {
-                    Text(providedGundam.name)
-                    HStack {
-                        VStack {
-                            Text("SRA")
-                            Text(providedGundam.SRA)
-                        }
-                        VStack {
-                            Text ("LRA")
-                            Text(providedGundam.LRA)
-                        }
-                        VStack(alignment: .leading){
-                            Text ("Rating")
-                            HStack{
-                                Image(systemName: "star.fill")
-                                Image(systemName: "star.fill")
-                                Image(systemName: "star.fill")
-                            }
+                .frame(width:150)
+                .overlay {
+                    Image(providedGundam.image)
+                        .resizable()
+                        .scaledToFit()
+                        .padding()
+                }
+            
+            VStack {
+                Text(providedGundam.name)
+                HStack {
+                    VStack {
+                        Text("SRA")
+                        Text(providedGundam.SRA)
+                    }
+                    VStack {
+                        Text ("LRA")
+                        Text(providedGundam.LRA)
+                    }
+                    VStack(alignment: .leading){
+                        Text ("Rating")
+                        HStack{
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
                         }
                     }
                 }
             }
+
         }
     }
 }

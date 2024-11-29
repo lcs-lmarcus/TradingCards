@@ -12,7 +12,8 @@
 		AE6C4EE02CE9A40F007AA1F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6C4ED82CE9A40F007AA1F8 /* Preview Assets.xcassets */; };
 		AE6C4EE12CE9A40F007AA1F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6C4EDA2CE9A40F007AA1F8 /* Assets.xcassets */; };
 		AECDB7102CF919F000F94868 /* Gundam.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDB70F2CF919E900F94868 /* Gundam.swift */; };
-		AECDB7242CF91CC600F94868 /* GundamListVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDB7232CF91CC600F94868 /* GundamListVIew.swift */; };
+		AECDB7242CF91CC600F94868 /* GundamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDB7232CF91CC600F94868 /* GundamListView.swift */; };
+		AECDB7622CFA070D00F94868 /* GundamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECDB7612CFA070D00F94868 /* GundamDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,8 @@
 		AE6C4EDC2CE9A40F007AA1F8 /* TradingCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsApp.swift; sourceTree = "<group>"; };
 		AEBFCE972CE3E0C700D8146D /* TradingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECDB70F2CF919E900F94868 /* Gundam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gundam.swift; sourceTree = "<group>"; };
-		AECDB7232CF91CC600F94868 /* GundamListVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundamListVIew.swift; sourceTree = "<group>"; };
+		AECDB7232CF91CC600F94868 /* GundamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundamListView.swift; sourceTree = "<group>"; };
+		AECDB7612CFA070D00F94868 /* GundamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundamDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				AE6C4EDB2CE9A40F007AA1F8 /* GundamView.swift */,
-				AECDB7232CF91CC600F94868 /* GundamListVIew.swift */,
+				AECDB7612CFA070D00F94868 /* GundamDetailView.swift */,
+				AECDB7232CF91CC600F94868 /* GundamListView.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -170,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECDB7622CFA070D00F94868 /* GundamDetailView.swift in Sources */,
 				AECDB7102CF919F000F94868 /* Gundam.swift in Sources */,
 				AE6C4EDE2CE9A40F007AA1F8 /* GundamView.swift in Sources */,
-				AECDB7242CF91CC600F94868 /* GundamListVIew.swift in Sources */,
+				AECDB7242CF91CC600F94868 /* GundamListView.swift in Sources */,
 				AE6C4EDF2CE9A40F007AA1F8 /* TradingCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
