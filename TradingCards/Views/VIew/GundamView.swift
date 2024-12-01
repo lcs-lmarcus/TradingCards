@@ -26,22 +26,26 @@ struct GundamView: View {
             
             VStack {
                 Text(providedGundam.name)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.red)
                 HStack {
                     VStack {
-                        Text("SRA")
-                        Text(providedGundam.SRA)
+                        Text("Cost")
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.blue)
+                        Text(providedGundam.cost)
                     }
-                    VStack {
-                        Text ("LRA")
-                        Text(providedGundam.LRA)
-                    }
+//                    .padding(.horizontal)
                     VStack(alignment: .leading){
                         Text ("Rating")
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.blue)
                         HStack{
                             Image(systemName: "star.fill")
                             Image(systemName: "star.fill")
                             Image(systemName: "star.fill")
                         }
+                        
                     }
                 }
             }

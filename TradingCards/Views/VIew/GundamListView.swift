@@ -20,9 +20,10 @@ struct GundamListView: View {
                     
                     GundamView(providedGundam: currentGundam)
                 }
+//                .background( LinearGradient(gradient:Gradient(colors: [Color.red, Color.blue, Color.white]), startPoint: .leading, endPoint: .trailing))
                 .navigationTitle("Gundam")
             }
-            .listStyle(.plain)
+//            .listStyle(.plain)
         }
     }
 }
